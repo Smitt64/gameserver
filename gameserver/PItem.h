@@ -5,8 +5,10 @@
 #include <vector>
 #include <string>
 
+#include "global.h"
+
 class Parser;
-class PItem
+class SERVER_CORE_API PItem
 {
 	friend class Parser;
 public:

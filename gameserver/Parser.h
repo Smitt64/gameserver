@@ -5,7 +5,9 @@
 #include <conio.h>
 #include <exception>
 
-class PARSE_ERROR : public std::exception
+#include "global.h"
+
+class SERVER_CORE_API PARSE_ERROR : public std::exception
 {
 public:
 	virtual const char* what() const
@@ -19,7 +21,7 @@ class QIODevice;
 #endif
 
 class PItem;
-class Parser
+class SERVER_CORE_API Parser
 {
 	friend class PItem;
 public:
