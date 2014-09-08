@@ -17,15 +17,20 @@ Server::~Server()
 {
 }
 
-void Server::loadSettings(const char const *settings)
+void Server::loadSettings(const char const *settings) throw(std::exception)
 {
 	if (!pSettings)
 		pSettings = new Parser();
 
-	ifstream f(settings);
-	
-	if (f.bad())
-		throw ios_base::failure("Can't open settings file");
+	ifstream f;
+	f.open(settings);
+	if (!f.is_open()) {
+		f.close();
+		throw ios_base::failure("Can't open settings file ");
+	}
 
+	pSettings->attach(&f);
 	pSettingsRootItem = pSettings->parse();
+
+	f.close();
 }

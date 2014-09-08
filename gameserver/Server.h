@@ -12,7 +12,7 @@ public:
 	Server();
 	~Server();
 
-	void loadSettings(const char const *settings);
+	void loadSettings(const char const *settings) throw(std::exception);
 
 private:
 	DBConnectionInterface *pConnection;
