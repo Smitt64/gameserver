@@ -12,3 +12,4 @@ protected:
 	virtual void init() = 0;
 };
 
+typedef DBConnectionInterface *(*DBConnectionInstance)();
