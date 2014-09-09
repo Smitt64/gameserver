@@ -4,6 +4,7 @@
 
 class SERVER_CORE_API DBConnectionInterface
 {
+	friend class Server;
 public:
 	DBConnectionInterface();
 	~DBConnectionInterface();

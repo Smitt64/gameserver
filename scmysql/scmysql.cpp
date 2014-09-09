@@ -5,7 +5,9 @@
 #include "MySqlConnector.h"
 #include <DBConnectionInterface.h>
 
-__declspec(dllexport) DBConnectionInterface *instance()
-{
-	return new MySqlConnector();
+extern "C"{
+	__declspec(dllexport) DBConnectionInterface  * CALLBACK instance()
+	{
+		return new MySqlConnector();
+	}
 }

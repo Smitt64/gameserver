@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gameserver", "gameserver\gameserver.vcxproj", "{AE2FA52F-0915-4C88-9FD9-DF4A04776E30}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scmysql", "scmysql\scmysql.vcxproj", "{B6BDF9A5-4CFB-46DF-849B-5CF9A751DC1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +17,10 @@ Global
 		{AE2FA52F-0915-4C88-9FD9-DF4A04776E30}.Debug|Win32.Build.0 = Debug|Win32
 		{AE2FA52F-0915-4C88-9FD9-DF4A04776E30}.Release|Win32.ActiveCfg = Release|Win32
 		{AE2FA52F-0915-4C88-9FD9-DF4A04776E30}.Release|Win32.Build.0 = Release|Win32
+		{B6BDF9A5-4CFB-46DF-849B-5CF9A751DC1F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B6BDF9A5-4CFB-46DF-849B-5CF9A751DC1F}.Debug|Win32.Build.0 = Debug|Win32
+		{B6BDF9A5-4CFB-46DF-849B-5CF9A751DC1F}.Release|Win32.ActiveCfg = Release|Win32
+		{B6BDF9A5-4CFB-46DF-849B-5CF9A751DC1F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

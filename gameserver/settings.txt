@@ -1,0 +1,5 @@
+main = {
+	sqlcon = {
+		driver = "scmysql.dll"
+	}
+}

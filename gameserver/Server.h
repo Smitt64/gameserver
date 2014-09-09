@@ -14,10 +14,14 @@ public:
 
 	void loadSettings(const char const *settings) throw(std::exception);
 
+	void init() throw(std::exception);
+
 private:
 	DBConnectionInterface *pConnection;
 	Parser *pSettings;
 	PItem *pSettingsRootItem;
+
+	void *hMod;
 };
 
 #endif

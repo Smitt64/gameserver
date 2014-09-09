@@ -12,11 +12,14 @@ int _tmain(int argc, _TCHAR* argv[])
 	try
 	{
 		core.loadSettings("settings.txt");
+		core.init();
 	}
 	catch (std::exception &e)
 	{
 		std::cerr << e.what();
 	}
+
+	getchar();
 	return 0;
 }
 
